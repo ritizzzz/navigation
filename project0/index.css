@@ -37,6 +37,9 @@ a:hover{
         display: none;
         width: 50vw;
     }
+    .closebtn{
+        margin-left: 200px;
+    }
     #toggle{
         display: block;
     }

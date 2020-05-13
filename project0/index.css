@@ -1,0 +1,42 @@
+body{
+    margin: 0px;
+}
+#nav{
+    background-color: black;
+    height: 100vh;
+    width: 204px;
+}
+a{
+    text-decoration: none;
+    color: grey;
+    display: block;
+    padding: 8px 32px 16px 8px;
+    font-size: 20px;
+   
+}
+
+a:hover{
+    transition: color 0.5s;
+    color:white;
+}
+.closebtn{
+    display: block;
+    margin-left: 150px;
+}
+#toggle{
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+    display: none;
+}
+@media (max-width: 504px){
+    #nav a{
+        font-size: 16px;
+    }
+    #nav{
+        display: none;
+    }
+    #toggle{
+        display: block;
+    }
+}

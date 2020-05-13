@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Webpage!</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="nav">
+            <div> 
+                
+                <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="">Table tennis</a>
+                <a href="">Different types of shots</a>
+                <a href="">Different types of spin</a>
+                
+            </div>
+        </div>
+        <span id="toggle" onclick="openNav()">&#9776;</span>
+    <script>
+        function closeNav(){
+            document.getElementById('nav').style.display = 'none';
+             document.getElementById('toggle').style.display = 'block';
+         }
+        function openNav(){
+            document.getElementById('nav').style.display = 'block';
+             document.getElementById('toggle').style.display = 'none';
+        }
+        
+        
+    </script>
+    
+    </body>
+</html>

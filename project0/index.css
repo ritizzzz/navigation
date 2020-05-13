@@ -31,10 +31,11 @@ a:hover{
 }
 @media (max-width: 504px){
     #nav a{
-        font-size: 16px;
+        font-size: 20px;
     }
     #nav{
         display: none;
+        width: 50vw;
     }
     #toggle{
         display: block;

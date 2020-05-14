@@ -29,14 +29,15 @@ a:hover{
     margin-left: 10px;
     display: none;
 }
-@media (max-width: 504px){
+@media (max-width: 700px){
     #nav a{
-        font-size: 20px;
+        font-size: 30px;
     }
     #nav{
         display: none;
-        width: 50%;
-        height: 80vw;
+        width: 70%;
+        height: 60vw;
+    
     }
     .closebtn{
         margin-left: 200px;

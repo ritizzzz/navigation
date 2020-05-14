@@ -35,7 +35,7 @@ a:hover{
     }
     #nav{
         display: none;
-        width: 50vw;
+        width: 50%;
     }
     .closebtn{
         margin-left: 200px;

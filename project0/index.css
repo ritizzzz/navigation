@@ -29,14 +29,32 @@ a:hover{
     margin-left: 10px;
     display: none;
 }
-@media (max-width: 700px){
+@media (max-width: 600px){
     #nav a{
         font-size: 30px;
     }
     #nav{
         display: none;
-        width: 70%;
-        height: 60vw;
+        width: 50vw;
+        height: 100vh;
+    
+    }
+    .closebtn{
+        margin-left: 200px;
+    }
+    #toggle{
+        display: block;
+    }
+}
+
+@media (min-width: 600px){
+    #nav a{
+        font-size: 30px;
+    }
+    #nav{
+        display: none;
+        width: 50vw;
+        height: 100vh;
     
     }
     .closebtn{

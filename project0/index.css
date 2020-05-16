@@ -31,10 +31,9 @@ a:hover{
     display: none;
 }
 @media (max-width: 640px){
-    #nav a{
+    
+    a{
         font-size: 18px;
-        
-        
     }
     #nav{
         display: none;

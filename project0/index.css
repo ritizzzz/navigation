@@ -30,7 +30,7 @@ a:hover{
     margin-left: 10px;
     display: none;
 }
-@media (max-width: 600px){
+@media (max-width: 640px){
     #nav a{
         font-size: 30px;
         
@@ -52,3 +52,20 @@ a:hover{
     }
 }
 
+@media (min-width: 640px){
+    #nav a{
+        font-size: 30px;
+    }
+    #nav{
+        display: none;
+        width: 50vw;
+        height: 100vh;
+    
+    }
+    .closebtn{
+        margin-left: 200px;
+    }
+    #toggle{
+        display: block;
+    }
+}

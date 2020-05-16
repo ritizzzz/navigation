@@ -22,7 +22,7 @@ a:hover{
 }
 .closebtn{
     display: block;
-    margin-left: 150px;
+    margin-left: 15px;
 }
 #toggle{
     font-size: 30px;
@@ -57,13 +57,12 @@ a:hover{
         font-size: 30px;
     }
     #nav{
-        display: none;
-        width: 50vw;
+        width: 20vw;
         height: 100vh;
     
     }
     .closebtn{
-        margin-left: 200px;
+        margin-left: 15vw;
     }
     #toggle{
         display: block;

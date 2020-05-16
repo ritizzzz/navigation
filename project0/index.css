@@ -30,17 +30,30 @@ a:hover{
 }
 #toggle{
     position: absolute;
-    font-size: 30px;
+    font-size: 24px;
     cursor: pointer;
     margin-left: 10px;
     display: none;
     z-index: 1;
     color: grey;
-    margin-top: 20px;
+    margin-top: 14px;
 }
 #toggle:hover{
     color: white;
     transition: color 0.5s;
+}
+#heading{
+    position: absolute;
+    left: 0px;
+    z-index: 0;
+    text-align: center;
+    background-color: black;
+    color: red;
+    width: 100vw;
+    display: inline-block;
+}
+#heading>h1{
+    font-size: 24px;
 }
 @media (max-width: 640px){
     
@@ -62,7 +75,7 @@ a:hover{
         font-size: 18px;
         margin-top: 12px;
     }
-    #main>h1{
+    #heading>h1{
         font-size: 18px;
     }
 }
@@ -82,14 +95,4 @@ a:hover{
     #toggle{
         display: none;
     }
-}
-#main{
-    position: absolute;
-    left: 0px;
-    z-index: 0;
-    text-align: center;
-    background-color: black;
-    color: red;
-    width: 100vw;
-    display: inline-block;
 }

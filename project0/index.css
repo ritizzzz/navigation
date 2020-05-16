@@ -23,9 +23,7 @@ a:hover{
     transition: color 0.5s;
     
 }
-a:visited{
-    color: white;
-}
+
 .closebtn{
     display: block;
     margin-left: 15px;
@@ -61,6 +59,11 @@ a:visited{
     }
     #toggle{
         display: inline-block;
+        font-size: 18px;
+        margin-top: 12px;
+    }
+    #main>h1{
+        font-size: 18px;
     }
 }
 

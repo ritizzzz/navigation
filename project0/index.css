@@ -5,6 +5,7 @@ body{
     background-color: black;
     height: 100vh;
     width: 204px;
+    position: absolute;
 }
 a{
     text-decoration: none;
@@ -32,35 +33,22 @@ a:hover{
 @media (max-width: 600px){
     #nav a{
         font-size: 30px;
+        
     }
     #nav{
         display: none;
         width: 50vw;
         height: 100vh;
+        position: absolute;
+        
     
     }
     .closebtn{
-        margin-left: 200px;
+        position: relative;
+        left: 80%;
     }
     #toggle{
         display: block;
     }
 }
 
-@media (min-width: 600px){
-    #nav a{
-        font-size: 30px;
-    }
-    #nav{
-        display: none;
-        width: 50vw;
-        height: 100vh;
-    
-    }
-    .closebtn{
-        margin-left: 200px;
-    }
-    #toggle{
-        display: block;
-    }
-}

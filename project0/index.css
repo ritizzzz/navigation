@@ -4,6 +4,7 @@
   height: 100%;
   overflow-x: hidden;
   position: relative;
+  background-color: yellow;
 
 }
 
@@ -103,19 +104,16 @@ a {
   #nav a {
     font-size: 20px;
     }
-
   #nav {
     width: 20vw;
-    height: 100%;
   }
-
   .closebtn {
     margin-left: 16vw;
   }
-
   #toggle {
     display: none;
   }
+  
 }
 #main{
   display: inline-block;

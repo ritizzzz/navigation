@@ -15,8 +15,6 @@
   height: 100vh;
   display: inline-block;
   z-index: 2;
-  bottom: 0px;
-  top: 0px;
 }
 
 /* default a tag styles weren't suitable for the website, */
@@ -32,6 +30,7 @@ a {
   display: block;
   margin-left: 18vw;
 }
+
 /* when a is hovered, the color slowly transitions from grey to white*/
 #toggle:hover, a:hover {
   color: white;
@@ -98,6 +97,10 @@ a {
   #heading > h1 {
     font-size: 18px;
   }
+    .my-image{
+        display: none;
+    }
+  
 }
 /* if the vw is bigger than 640px, the following styles are applied*/
 @media (min-width: 640px) {
@@ -118,18 +121,12 @@ a {
 #main{
   display: inline-block;
   margin-top: 80px;;
-  width: 100vw;
   border: none;
 
 }
 .row>div{
     background-color: yellow;
     margin-bottom: 5px;
-    
-}
-#main>p{
-    width: 50vw;
-    text-align: center;
     
 }
 /*# sourceMappingURL=index.css.map */

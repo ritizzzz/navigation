@@ -1,69 +1,87 @@
-a:hover, #toggle:hover {
-  color: white;
-  transition: color 0.5s;
+$colorr: red;
+$colorb: black;
+$colorw: white;
+$colorg: grey;
+$colory: yellow;
+$positiona: absolute;
+$disb: block;
+$disib: inline-block;
+%clsbtn{
+    color:$colorw;
+    transition: color 0.5s;
 }
-
 body {
   margin: 0px;
   height: 100%;
   overflow-x: hidden;
   position: relative;
-  background-color: yellow;
+  background-color: $colory;
+
 }
 
 /* nav relative to body, display inline $disb will alow other elements to be placed next to nav, has the highest z-index in so it can overlap anything when opened*/
 #nav {
-  position: absolute;
-  background-color: black;
+  position: $positiona;
+  background-color: $colorb;
   height: 100vh;
-  display: inline-block;
+  display: $disib;
   z-index: 2;
 }
 
 /* default a tag styles weren't suitable for the website, */
 a {
   text-decoration: none;
-  color: grey;
-  display: block;
+  color: $colorg;
+  display: $disb;
   padding: 8px 32px 8px 8px;
 }
 
 /* closebtn of the nav*/
 .closebtn {
-  display: block;
+  display: $disb;
   margin-left: 18vw;
 }
 
 /* when a is hovered, the color slowly transitions from $colorg to white*/
+#toggle:hover{
+    @extend %clsbtn;   
+}
+
+
+a:hover {
+  @extend %clsbtn;
+}
+
+
 /*relative to the body, initialy it should not be visible because the nav bar should open up when the user visits website*/
 #toggle {
-  position: absolute;
+  position: $positiona;
   font-size: 24px;
   cursor: pointer;
   margin-left: 10px;
   display: none;
   z-index: 1;
-  color: grey;
+  color: $colorg;
   margin-top: 14px;
 }
 
 /*Has the lowest z-index, as it was important for the toggle to overlap the heading*/
 #heading {
-  position: absolute;
+  position: $positiona;
   left: 0px;
   z-index: 0;
   text-align: center;
-  background-color: black;
-  color: red;
+  background-color: $colorb;
+  color: $colorr;
   width: 100vw;
-  display: inline-block;
+  display: $disib;
   height: 60px;
 }
 
 /* any child inside heading that are the tag h1*/
 #heading > h1 {
   font-size: 24px;
-  margin-top: 14px;
+    margin-top: 14px;
 }
 
 /* if the vw is less than 640px, the following styles are applied*/
@@ -76,18 +94,17 @@ a {
     display: none;
     width: 50vw;
     height: 100%;
+   
   }
-
-  #heading {
+  #heading{
     height: 45px;
   }
-
   .closebtn {
     margin-left: 40vw;
   }
 
   #toggle {
-    display: block;
+    display: $disb;
     font-size: 18px;
     margin-top: 12px;
   }
@@ -95,34 +112,34 @@ a {
   #heading > h1 {
     font-size: 18px;
   }
+
 }
 /* if the vw is bigger than 640px, the following styles are applied*/
 @media (min-width: 640px) {
-  #nav a {
-    font-size: 20px;
-  }
-
+    #nav{
+        a {
+            font-size: 20px;
+        }
+    } 
   #nav {
     width: 20vw;
   }
-
   .closebtn {
     margin-left: 16vw;
   }
-
   #toggle {
     display: none;
   }
+  
 }
-#main {
-  display: inline-block;
-  margin-top: 80px;
+#main{
+  display: inline-$disb;
+  margin-top: 80px;;
   border: none;
-}
 
-.row > div {
-  background-color: yellow;
-  margin-bottom: 5px;
 }
-
-/*# sourceMappingURL=index.css.map */
+.row>div{
+    background-color: $colory;
+    margin-bottom: 5px;
+    
+}
